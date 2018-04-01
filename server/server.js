@@ -1,5 +1,5 @@
 const express = require('express');
-
+const port = process.env.PORT || 3000;
 var app = express();
 
 app.get('/', (req, res) => {
@@ -24,5 +24,7 @@ app.get('/users', (req, res) => {
 // GET /users
 // Give users a name prop and age prop
 
-app.listen(3000);
+app.listen(port, ()=>{
+	console.log(`Server is running on port ${port}`);
+});
 module.exports.app = app;

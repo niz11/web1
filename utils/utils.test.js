@@ -1,7 +1,7 @@
 const expect = require('expect');
 
 const utils = require('./utils');
-
+describe("Math functions testing", ()=>{
 it('should add two numbers', () => {
   var res = utils.add(33, 11);
 
@@ -27,7 +27,7 @@ it('should async square a number', (done) => {
     done();
   });
 });
-
+})
 // should verify first and last names are set
 // assert it includes firstName and lastName with proper values
 it('should set firstName and lastName', () => {
