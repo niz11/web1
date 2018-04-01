@@ -23,7 +23,18 @@ app.get('/users', (req, res) => {
 });
 // GET /users
 // Give users a name prop and age prop
-
+app.get('/check', (req, res) => {
+  res.send([{
+    name: 'Niz',
+    age: 26
+  }, {
+    name: 'Nadav',
+    age: 26
+  }, {
+    name: 'Tomer',
+    age: 27
+  }]);
+});
 app.listen(port, ()=>{
 	console.log(`Server is running on port ${port}`);
 });
